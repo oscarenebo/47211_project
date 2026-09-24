@@ -1,4 +1,3 @@
-import csv
 from pathlib import Path
 from typing import Iterable
 
@@ -28,12 +27,10 @@ def dataPlot(
 		if file_path is not None
 		else Path(__file__).parent / "data" / "ProductionConsumptionSettlement_DK.csv"
 	)
-	with data_path.open("r", encoding="utf-8", newline="") as file:
-		delimiter = csv.Sniffer().sniff(file.read(4096)).delimiter
 	data = pd.read_csv(
 		data_path,
-		sep=delimiter,
-		decimal="," if delimiter == ";" else ".",
+		sep=",",
+		decimal=".",
 	)
 	data["HourDK"] = pd.to_datetime(data["HourDK"])
 
