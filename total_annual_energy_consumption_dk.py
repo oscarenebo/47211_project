@@ -9,3 +9,5 @@ LIGHT_TRANSPORT = 100
 TRUCKS = 50
 SHIPPING = 50      # not including 500 PJ of international shipping under Danish flag
 AVIATION = 50
+
+AVAILABLE_BIOMASS = 150  # "Use a value of 150 PJ for the available biomass (and sustainable trash) in DK"
