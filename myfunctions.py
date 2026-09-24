@@ -29,8 +29,8 @@ def dataPlot(
 	)
 	data = pd.read_csv(
 		data_path,
-		sep=",",
-		decimal=".",
+		sep=";",
+		decimal=",",
 	)
 	data["HourDK"] = pd.to_datetime(data["HourDK"])
 
