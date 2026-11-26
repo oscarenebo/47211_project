@@ -32,5 +32,5 @@ def sum_dk1_dk2(
 if __name__ == "__main__":
 	cwd = os.getcwd()
 	input_path = os.path.join(cwd, "data", "ProductionConsumptionSettlement.csv")
-	output_path = os.path.join(cwd, "data", "ProductionConsumptionSettlement_DK.csv")
+	output_path = os.path.join(cwd, "data", "ProductionConsumptionSettlement_DK_total.csv")
 	sum_dk1_dk2(input_path=input_path, output_path=output_path)

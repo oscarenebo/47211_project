@@ -7,22 +7,14 @@ from pathlib import Path
 from typing import Iterable
 
 DATA_DIRECTORY = Path(__file__).parent / "data"
-DEFAULT_INPUT_PATH = DATA_DIRECTORY / "ProductionConsumptionSettlement_DK.csv"
+DEFAULT_INPUT_PATH = DATA_DIRECTORY / "ProductionConsumptionSettlement_DK_total.csv"
 DEFAULT_OUTPUT_PATH = DATA_DIRECTORY / "ProductionConsumptionSettlement_small.csv"
 DEFAULT_COLUMNS_TO_REMOVE = [
 	"CentralPowerMWh",
 	"LocalPowerMWh",
 	"CommercialPowerMWh",
 	"LocalPowerSelfConMWh",
-	"OffshoreWindLt100MW_MWh",
-	"OffshoreWindGe100MW_MWh",
-	"OnshoreWindLt50kW_MWh",
-	"OnshoreWindGe50kW_MWh",
 	"HydroPowerMWh",
-	"SolarPowerLt10kW_MWh",
-	"SolarPowerGe10Lt40kW_MWh",
-	"SolarPowerGe40kW_MWh",
-	"SolarPowerSelfConMWh",
 	"UnknownProdMWh",
 	"ExchangeNO_MWh",
 	"ExchangeSE_MWh",
