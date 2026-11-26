@@ -7,6 +7,7 @@ LIGHT_TRANSPORT = 100
 
 # HEAVY TRANSPORT
 TRUCKS = 50
+TRUCKS_ELECTRIFIED = TRUCKS * 0.4 # An electric truck uses approx. 40% of the energy (electricity) of a diesel truck
 SHIPPING = 50      # not including 500 PJ of international shipping under Danish flag
 AVIATION = 50
 
